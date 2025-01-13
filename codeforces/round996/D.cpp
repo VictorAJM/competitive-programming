@@ -1,54 +1,41 @@
 #include <bits/stdc++.h>
-#define F first
-#define S second
+
+#define f first
+#define s second
+#define pb push_back
+
+typedef long long int ll;
+typedef unsigned long long int ull;
 using namespace std;
-using ll = long long;
-using ii = pair<int,int>;
-  ll n,k,l;
-bool f(ll time, vector<ll> &a) {
+typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
 
-  ll pos = 0;
-  for (auto u : a) {
-    ll _t = time;
-    if (u>pos) {
-      _t -= (u-pos);
-      if (_t>=0) pos += k;
-      if (_t>0) pos+=_t;
-    } else {
-      if (u<pos-k) {
-        _t -= (pos-k)-u;
-        u = pos-k;
-      }
-      if (_t>=0) {
-        pos = max(pos, u+k+_t);
-      }
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
+    int T; cin >> T;
+    while (T--) {
+        int N, k, l;
+        cin >> N >> k >> l;
+        double K = k;
+        double L = l;
+        vector<int> A(N);
+        for (int i = 0; i < N; i++) cin >> A[i];
+        double T = A[0];
+        double last_pt = 0;
+        double S = 0;
+        for (int i = 1; i < N; i++) {
+            double this_pt = min(L, min(A[i] + T,
+                                max(last_pt + K,
+                                    (A[i] - T + last_pt + K)/2.0)));
+            T += max(0.0, this_pt - last_pt - K);
+            S += min(K, this_pt - last_pt);
+            last_pt = this_pt;
+        }
+        S += min(K, L - last_pt);
+        cout << (int)round(2*(L - S + A[0])) << endl;
     }
-
-    if (pos>=l) return true;
-  }
-  if (pos>=l) return true;
-  return false;
-}
-void solve() {
-
-  cin >> n >> k >> l;
-  vector<ll> a(n);
-  k*=2; l*=2;
-  for(auto& i:a) cin >> i;
-  for(auto& i:a) i*=2;
-  ll in = -1;
-  ll r = l*4;
-  while (in +1< r) {
-    ll m = (in+r)/2;
-    if (f(m, a)) r=m;
-    else in = m; 
-  }
-  cout << r << "\n";
-}
-int main() {
-  cin.tie(0); cout.tie(0); ios_base::sync_with_stdio(0);
-  int t;
-  cin>>t;
-  while (t--) solve();
-  return 0;
+    return 0;
 }
