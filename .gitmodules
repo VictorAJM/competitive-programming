@@ -1,0 +1,3 @@
+[submodule "CFcontestCreator"]
+	path = CFcontestCreator
+	url = https://github.com/VictorAJM/CFcontestCreator.git
