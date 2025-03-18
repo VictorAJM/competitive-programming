@@ -1,0 +1,1 @@
+{"name":"Local: 1132F","url":"c:\\Users\\victo\\competitive-programming\\codeforces\\1132F.cpp","tests":[{"id":1742322964143,"input":"5\nabaca\n","output":"3"},{"id":1742322967869,"input":"8\nabcddcba\n","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\victo\\competitive-programming\\codeforces\\1132F.cpp","group":"local","local":true}
