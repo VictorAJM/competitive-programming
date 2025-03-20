@@ -1,0 +1,1 @@
+{"name":"Local: 718C","url":"c:\\Users\\victo\\competitive-programming\\codeforces\\718C.cpp","tests":[{"id":1742507506798,"input":"5 4\n1 1 2 1 1\n2 1 5\n1 2 4 2\n2 2 4\n2 1 5\n","output":"5\n7\n9\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\victo\\competitive-programming\\codeforces\\718C.cpp","group":"local","local":true}
