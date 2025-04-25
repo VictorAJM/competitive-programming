@@ -1,5 +1,7 @@
 {
   "handle": "Chaska",
   "problems": 1,
-  "rating": 2200
+  "rating": 2200,
+  "minimumSolvedCount": 1500,
+  "maximumSolvedCount": 3000
 }
