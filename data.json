@@ -1,8 +1,8 @@
 {
   "handle": "Chaska",
   "problems": 1,
-  "minimumRating": 2200,
-  "maximumRating": 2400,
+  "minimumRating": 2100,
+  "maximumRating": 2300,
   "minimumSolvedCount": 1500,
   "maximumSolvedCount": 3000,
   "problemsFolder": "../codeforces"
