@@ -5,7 +5,7 @@
     "maximumRating": "2400",
     "minimumSolvedCount": "1500",
     "maximumSolvedCount": "3000",
-    "tags": "FFT,DP",
-    "filterTagsBy": "AND",
+    "tags": "TWO_SAT,BITMASKS,COMBINATORICS,CONSTRUCTIVE,DIVIDE_AND_CONQUER",
+    "filterTagsBy": "OR",
     "problemsFolder": "../codeforces"
 }
