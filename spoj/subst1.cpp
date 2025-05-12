@@ -38,6 +38,8 @@ vector<int> build_suffix_array(const string &s) {
         }
         c.swap(cn);
     }
+    for (int i=0;i<n;i++) cout << p[i] << " ";
+    cout << "\n";
     return p;
 }
 
@@ -58,6 +60,8 @@ vector<int> build_lcp(const string &s, const vector<int> &sa) {
         lcp[rank[i]] = k;
         if (k) k--;
     }
+    for (int i=0;i<n;i++) cout << lcp[i] << " ";
+    cout << "\n";
     return lcp;
 }
 
