@@ -38,11 +38,6 @@ vector<int> build_suffix_array(const string &s) {
             cn[p[i]] = classes - 1;
         }
         c.swap(cn);
-
-        for (int i=0;i<n;i++) cout << p[i] << " ";
-        cout << "\n";
-        for (int i=0;i<n;i++) cout << c[i] << " ";
-        cout << "\n\n";
     }
     return p;
 }
