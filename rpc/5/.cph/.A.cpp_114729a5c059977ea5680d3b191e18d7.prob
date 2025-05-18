@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"c:\\Users\\victo\\competitive-programming\\rpc\\5\\A.cpp","tests":[{"id":1747505156410,"input":"\n5\n3\n1 2 3\n4\n1 2 3 4\n5\n5 4 3 2 1\n5\n3 2 5 1 4\n5\n1 1 1 1 1","output":"9\n19\n33\n33\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\victo\\competitive-programming\\rpc\\5\\A.cpp","group":"local","local":true}
