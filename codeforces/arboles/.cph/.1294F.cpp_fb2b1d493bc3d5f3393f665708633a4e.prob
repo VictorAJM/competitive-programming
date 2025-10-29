@@ -1,0 +1,1 @@
+{"name":"Local: 1294F","url":"c:\\Users\\victo\\competitive-programming\\codeforces\\arboles\\1294F.cpp","tests":[{"id":1761776458989,"input":"8\n1 2\n2 3\n3 4\n4 5\n4 6\n3 7\n3 8\n","output":"5\n1 8 6\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\victo\\competitive-programming\\codeforces\\arboles\\1294F.cpp","group":"local","local":true}
